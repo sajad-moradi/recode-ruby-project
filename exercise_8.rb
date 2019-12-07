@@ -36,3 +36,14 @@ when "female"
 else
   puts "Wrong input!"
 end
+if age.odd?
+    puts "Your age is an odd number."
+else
+    puts "Your age is an even number."
+end
+birth_year = 2019 - age
+if birth_year.modulo(400) == 0 || birth_year.modulo(4) == 0 && birth_year.modulo(100) != 0
+    puts "Your birth year is #{birth_year} which is a leap year!" 
+else
+    puts "Your birth year is #{birth_year} which is a normal year!"
+end
