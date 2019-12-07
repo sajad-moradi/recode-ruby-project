@@ -6,13 +6,13 @@ secret_number = rand(1..1000)
 times = 0
 puts "Guess the secret number?"
 guess =
-until guess == secret_number
+  until guess == secret_number
     guess = gets.chomp.to_i
     times += 1
     if guess > secret_number
-        puts "Colder"
+      puts "Colder"
     elsif guess < secret_number
-        puts "Hotter"
+      puts "Hotter"
     end
-end
+  end
 puts "Congratulations #{name}, you guessed it in #{times} gusses. The secret number is #{secret_number}!"
