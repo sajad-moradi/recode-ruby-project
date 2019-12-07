@@ -4,7 +4,7 @@ if input_number != input_number.to_i.to_s
   print "Wrong input!"
 else
   input_number = input_number.to_i
-  for number in 1..13
+  for number in 1..input_number * 3 + 1
     print "*"
   end
   puts ""
@@ -18,7 +18,7 @@ else
       end
     end
     puts ""
-    for number in 1..13
+    for number in 1..input_number * 3 + 1
       print "*"
     end
     puts ""
