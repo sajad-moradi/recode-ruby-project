@@ -7,6 +7,6 @@ def reverse_array(array)
         x.push(array.pop)
         break if i == len
     end
-    print x
+    return x
 end 
-reverse_array([1,2,3,4,5])
+p reverse_array([1,2,3,4,5])
